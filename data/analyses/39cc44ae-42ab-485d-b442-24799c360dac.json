@@ -1,0 +1,91 @@
+{
+    "resume_id": "39cc44ae-42ab-485d-b442-24799c360dac",
+    "filename": "Kanu_Golden_Chidiuto_CV (1).docx",
+    "analysis": {
+        "word_count": 283,
+        "skill_count": 0
+    },
+    "skills": [],
+    "recommendations": [
+        "Your resume needs improvement before applying for these roles.",
+        "Focus on learning: docker, machine learning, python, scikit-learn"
+    ],
+    "matches": [
+        {
+            "title": "Machine Learning Engineer",
+            "company": "OpenAI",
+            "location": "Remote",
+            "required_skills": [
+                "Python",
+                "Machine Learning",
+                "Scikit-learn",
+                "Docker"
+            ],
+            "matched_skills": [],
+            "missing_skills": [
+                "docker",
+                "machine learning",
+                "python",
+                "scikit-learn"
+            ],
+            "match_score": 0
+        },
+        {
+            "title": "Data Scientist",
+            "company": "Google",
+            "location": "USA",
+            "required_skills": [
+                "Python",
+                "SQL",
+                "Pandas",
+                "Statistics"
+            ],
+            "matched_skills": [],
+            "missing_skills": [
+                "pandas",
+                "python",
+                "sql",
+                "statistics"
+            ],
+            "match_score": 0
+        },
+        {
+            "title": "AI Engineer",
+            "company": "Microsoft",
+            "location": "Remote",
+            "required_skills": [
+                "Python",
+                "FastAPI",
+                "NLP",
+                "Transformers"
+            ],
+            "matched_skills": [],
+            "missing_skills": [
+                "fastapi",
+                "nlp",
+                "python",
+                "transformers"
+            ],
+            "match_score": 0
+        },
+        {
+            "title": "Backend Developer",
+            "company": "Amazon",
+            "location": "USA",
+            "required_skills": [
+                "Python",
+                "FastAPI",
+                "APIs",
+                "Docker"
+            ],
+            "matched_skills": [],
+            "missing_skills": [
+                "apis",
+                "docker",
+                "fastapi",
+                "python"
+            ],
+            "match_score": 0
+        }
+    ]
+}

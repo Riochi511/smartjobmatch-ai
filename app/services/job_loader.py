@@ -1,5 +1,9 @@
 import pandas as pd
 
+from app.exceptions.custom_exceptions import (
+    JobLoadingException
+)
+
 
 class JobLoader:
 
@@ -7,5 +11,23 @@ class JobLoader:
         self.csv_path = csv_path
 
     def load_jobs(self):
-        df = pd.read_csv(self.csv_path)
-        return df.to_dict(orient="records")
+
+        try:
+
+            df = pd.read_csv(self.csv_path)
+
+            return df.to_dict(
+                orient="records"
+            )
+
+        except FileNotFoundError:
+
+            raise JobLoadingException(
+                f"Job file '{self.csv_path}' was not found."
+            )
+
+        except Exception as e:
+
+            raise JobLoadingException(
+                f"Unable to load jobs: {str(e)}"
+            )

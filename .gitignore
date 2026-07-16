@@ -14,3 +14,15 @@ __pycache__/
 # Operating System Files
 .DS_Store
 Thumbs.db
+
+# Logs
+logs/
+
+# Runtime Data (generated while the app runs)
+data/resumes/
+data/analyses/
+data/latest_result.json
+data/resume_history.json
+
+# Temporary Uploads
+temp_*

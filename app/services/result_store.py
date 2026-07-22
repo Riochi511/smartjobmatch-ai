@@ -1,5 +1,5 @@
 import json
-import os
+from pathlib import Path
 
 
 class ResultStore:
@@ -8,19 +8,18 @@ class ResultStore:
 
     @staticmethod
     def save(result):
+        path = Path(ResultStore.FILE_PATH)
+        path.parent.mkdir(parents=True, exist_ok=True)
 
-        with open(ResultStore.FILE_PATH, "w") as file:
-            json.dump(
-                result,
-                file,
-                indent=4
-            )
+        with open(path, "w") as file:
+            json.dump(result, file, indent=4)
 
     @staticmethod
     def load():
+        path = Path(ResultStore.FILE_PATH)
 
-        if not os.path.exists(ResultStore.FILE_PATH):
+        if not path.exists():
             return None
 
-        with open(ResultStore.FILE_PATH, "r") as file:
+        with open(path, "r") as file:
             return json.load(file)

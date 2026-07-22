@@ -9,12 +9,14 @@ from pathlib import Path
 class ResumeRepository:
 
     HISTORY_FILE = Path("data/cache/resume_history.json")
-    RESUME_FOLDER = Path("data//resumes")
+    RESUME_FOLDER = Path("data/resumes")
 
     @classmethod
     def save_resume(cls, temp_file, original_filename):
 
+        # Create required directories
         cls.RESUME_FOLDER.mkdir(parents=True, exist_ok=True)
+        cls.HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
 
         if not cls.HISTORY_FILE.exists():
             cls.HISTORY_FILE.write_text("[]")
@@ -22,9 +24,7 @@ class ResumeRepository:
         resume_id = str(uuid.uuid4())
 
         extension = Path(original_filename).suffix
-
         stored_filename = f"{resume_id}{extension}"
-
         destination = cls.RESUME_FOLDER / stored_filename
 
         shutil.copy(temp_file, destination)

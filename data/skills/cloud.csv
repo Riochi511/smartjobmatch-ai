@@ -1,0 +1,179 @@
+skill
+AWS
+Amazon Web Services
+EC2
+ECS
+EKS
+Lambda
+API Gateway
+CloudFormation
+CloudWatch
+CloudTrail
+IAM
+VPC
+Route 53
+Elastic Load Balancer
+ELB
+Application Load Balancer
+ALB
+Network Load Balancer
+NLB
+Auto Scaling
+S3
+Glacier
+EFS
+FSx
+RDS
+Aurora
+DynamoDB
+Elasticache
+Redshift
+Athena
+EMR
+Kinesis
+SNS
+SQS
+EventBridge
+Step Functions
+Secrets Manager
+Systems Manager
+SSM
+CodeCommit
+CodeBuild
+CodeDeploy
+CodePipeline
+CloudFront
+WAF
+Shield
+Macie
+GuardDuty
+Inspector
+Detective
+Organizations
+Control Tower
+AWS Config
+Trusted Advisor
+AWS Backup
+Textract
+Rekognition
+Comprehend
+Translate
+Transcribe
+Polly
+SageMaker
+Bedrock
+Lex
+OpenSearch
+MSK
+ECR
+Lightsail
+Outposts
+Fargate
+App Runner
+Amplify
+Cognito
+Azure
+Microsoft Azure
+Azure Virtual Machines
+Azure App Service
+Azure Functions
+Azure Kubernetes Service
+AKS
+Azure Container Registry
+Azure Blob Storage
+Azure Files
+Azure Disk Storage
+Azure SQL Database
+Azure Cosmos DB
+Azure Key Vault
+Azure Monitor
+Azure DevOps
+Azure Pipelines
+Azure Resource Manager
+ARM Templates
+Azure Logic Apps
+Azure API Management
+Azure Service Bus
+Azure Event Grid
+Azure Event Hubs
+Azure Data Factory
+Azure Synapse
+Azure Machine Learning
+Azure OpenAI
+Azure AI Studio
+Microsoft Entra ID
+Azure Active Directory
+Azure Firewall
+Azure Front Door
+Azure CDN
+Azure Load Balancer
+Azure Application Gateway
+Google Cloud
+Google Cloud Platform
+GCP
+Compute Engine
+App Engine
+Cloud Run
+Cloud Functions
+Google Kubernetes Engine
+GKE
+Cloud Storage
+Cloud SQL
+BigQuery
+Bigtable
+Firestore
+Pub/Sub
+Dataflow
+Dataproc
+Cloud Build
+Artifact Registry
+Cloud CDN
+Cloud Armor
+Cloud DNS
+Cloud Logging
+Cloud Monitoring
+Vertex AI
+Document AI
+Vision AI
+Speech-to-Text
+Text-to-Speech
+Cloud Scheduler
+Cloud Tasks
+Identity Platform
+Secret Manager
+Terraform
+OpenTofu
+Pulumi
+Serverless
+Infrastructure as Code
+IaC
+Multi Cloud
+Hybrid Cloud
+Private Cloud
+Public Cloud
+Cloud Migration
+Cloud Security
+Cloud Architecture
+Cloud Networking
+Cloud Native
+FinOps
+Identity and Access Management
+IAM Policies
+Object Storage
+Block Storage
+File Storage
+Disaster Recovery
+High Availability
+Availability Zones
+Regions
+Edge Computing
+CDN
+Virtual Machines
+Containers
+Container Registry
+Managed Kubernetes
+Autoscaling
+Load Balancing
+Cloud Cost Optimization
+Cloud Governance
+Cloud Compliance

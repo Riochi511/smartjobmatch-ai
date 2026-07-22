@@ -1,0 +1,275 @@
+skill
+Cybersecurity
+Information Security
+Computer Security
+Application Security
+Network Security
+Cloud Security
+Endpoint Security
+Infrastructure Security
+Data Security
+Database Security
+Identity Security
+Operational Security
+Security Engineering
+Security Architecture
+Security Operations
+SOC
+Security Operations Center
+Blue Team
+Red Team
+Purple Team
+Threat Hunting
+Threat Intelligence
+Cyber Threat Intelligence
+Incident Response
+Digital Forensics
+Malware Analysis
+Reverse Engineering
+Penetration Testing
+Ethical Hacking
+Vulnerability Assessment
+Vulnerability Management
+Risk Assessment
+Risk Management
+Security Auditing
+Compliance
+Governance
+GRC
+Security Monitoring
+Security Analytics
+SIEM
+SOAR
+MITRE ATT&CK
+MITRE D3FEND
+Cyber Kill Chain
+Zero Trust
+Defense in Depth
+Least Privilege
+Need to Know
+Identity and Access Management
+IAM
+Access Control
+Role Based Access Control
+RBAC
+Attribute Based Access Control
+ABAC
+Multi Factor Authentication
+MFA
+Two Factor Authentication
+2FA
+Single Sign On
+SSO
+Federated Identity
+OpenID Connect
+OAuth
+OAuth2
+SAML
+LDAP
+Active Directory
+Azure Active Directory
+Microsoft Entra ID
+Privileged Access Management
+PAM
+Password Management
+Secrets Management
+Hashing
+Salting
+Encryption
+Symmetric Encryption
+Asymmetric Encryption
+RSA
+ECC
+AES
+DES
+Triple DES
+ChaCha20
+Blowfish
+SHA-256
+SHA-512
+MD5
+HMAC
+Digital Signature
+Public Key Infrastructure
+PKI
+Certificate Management
+TLS
+SSL
+HTTPS
+SSH
+IPSec
+VPN
+WireGuard
+OpenVPN
+Firewall
+Web Application Firewall
+WAF
+IDS
+IPS
+Network Segmentation
+DMZ
+Proxy Server
+Reverse Proxy
+DNS Security
+DNSSEC
+Email Security
+SPF
+DKIM
+DMARC
+Secure Coding
+Secure Software Development
+Secure SDLC
+OWASP
+OWASP Top 10
+CWE
+CVE
+CVE Management
+CVSS
+Threat Modeling
+STRIDE
+PASTA
+Attack Surface Management
+Static Application Security Testing
+SAST
+Dynamic Application Security Testing
+DAST
+Interactive Application Security Testing
+IAST
+Software Composition Analysis
+SCA
+Dependency Scanning
+Code Scanning
+Container Security
+Docker Security
+Kubernetes Security
+Supply Chain Security
+SBOM
+Binary Analysis
+Memory Forensics
+Disk Forensics
+Mobile Forensics
+Log Analysis
+Packet Analysis
+Wireshark
+tcpdump
+Nmap
+Masscan
+Metasploit
+Burp Suite
+OWASP ZAP
+Nikto
+Hydra
+Aircrack-ng
+John the Ripper
+Hashcat
+YARA
+Sigma Rules
+Snort
+Suricata
+Zeek
+OSSEC
+Wazuh
+Splunk
+Elastic Security
+Microsoft Sentinel
+IBM QRadar
+ArcSight
+Rapid7 InsightIDR
+CrowdStrike Falcon
+Microsoft Defender
+SentinelOne
+Sophos
+Trend Micro
+McAfee
+Symantec Endpoint Protection
+Cisco Secure
+Palo Alto Networks
+Fortinet
+Check Point
+Imperva
+Cloudflare Security
+AWS Security Hub
+AWS GuardDuty
+AWS IAM
+AWS KMS
+AWS Shield
+AWS WAF
+Azure Security Center
+Azure Defender
+Google Cloud Security Command Center
+Cloud Armor
+Secrets Manager
+HashiCorp Vault
+Key Management
+Data Loss Prevention
+DLP
+Backup Security
+Disaster Recovery
+Business Continuity
+Security Awareness
+Phishing
+Spear Phishing
+Whaling
+Smishing
+Vishing
+Social Engineering
+Insider Threat
+Ransomware
+Spyware
+Adware
+Rootkit
+Trojan
+Virus
+Worm
+Botnet
+Command and Control
+C2
+Exploit Development
+Buffer Overflow
+SQL Injection
+Cross Site Scripting
+XSS
+Cross Site Request Forgery
+CSRF
+Remote Code Execution
+RCE
+Directory Traversal
+XML External Entity
+XXE
+Server Side Request Forgery
+SSRF
+Clickjacking
+Session Hijacking
+Session Fixation
+Authentication Bypass
+Privilege Escalation
+Security Misconfiguration
+Broken Access Control
+Broken Authentication
+Insecure Deserialization
+Race Condition
+Memory Corruption
+Secure Configuration
+Patch Management
+Hardening
+Linux Hardening
+Windows Hardening
+Network Hardening
+PCI DSS
+ISO 27001
+ISO 27002
+SOC 2
+HIPAA
+GDPR
+NIST Cybersecurity Framework
+NIST 800-53
+NIST 800-171
+CIS Controls
+CIS Benchmarks
+COBIT
+FERPA
+FedRAMP
+Security Policy
+Security Standards
+Security Procedures
+Cyber Resilience

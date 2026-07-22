@@ -1,0 +1,51 @@
+# Virtual Environment
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# VS Code Settings
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+
+# Runtime Data (generated while the app runs)
+data/resumes/
+data/analyses/
+data/latest_result.json
+data/resume_history.json
+
+# Temporary Uploads
+temp_*
+smartjobmatch-ai/
+data/jobs.csv
+# Large data files
+data/embeddings/
+data/raw/jobs.csv
+data/cache/
+data/resumes/
+data/analyses/
+*.npy
+*.index
+
+# Temporary files
+temp_*
+*.pdf
+*.docx
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/

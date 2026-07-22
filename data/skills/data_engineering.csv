@@ -1,0 +1,193 @@
+skill
+Data Engineering
+Big Data
+Data Pipeline
+Data Pipelines
+ETL
+ELT
+Data Ingestion
+Data Transformation
+Data Processing
+Batch Processing
+Stream Processing
+Real Time Processing
+Event Streaming
+Apache Spark
+PySpark
+Spark SQL
+Spark Streaming
+Structured Streaming
+Apache Hadoop
+HDFS
+YARN
+MapReduce
+Apache Hive
+HiveQL
+Apache Pig
+Apache HBase
+Apache Kafka
+Kafka Connect
+Kafka Streams
+Apache Pulsar
+RabbitMQ
+Amazon Kinesis
+Google Pub/Sub
+Azure Event Hubs
+Apache Flink
+Apache Beam
+Google Dataflow
+Apache Storm
+Apache NiFi
+Apache Airflow
+Dagster
+Prefect
+Luigi
+Argo Workflows
+Data Orchestration
+Workflow Orchestration
+Databricks
+Delta Lake
+Lakehouse
+Data Lake
+Data Lakehouse
+Data Warehouse
+Snowflake
+BigQuery
+Amazon Redshift
+Azure Synapse
+ClickHouse
+Greenplum
+Teradata
+Vertica
+Trino
+Presto
+DuckDB
+PostgreSQL
+MySQL
+MariaDB
+SQL Server
+Oracle Database
+IBM Db2
+MongoDB
+Cassandra
+DynamoDB
+Cosmos DB
+Redis
+Elasticsearch
+OpenSearch
+Neo4j
+InfluxDB
+TimescaleDB
+Parquet
+ORC
+Avro
+CSV
+JSON
+XML
+Data Modeling
+Dimensional Modeling
+Star Schema
+Snowflake Schema
+Normalization
+Denormalization
+Data Mart
+Slowly Changing Dimensions
+SCD
+Fact Table
+Dimension Table
+Master Data Management
+MDM
+Data Governance
+Data Lineage
+Data Catalog
+Apache Atlas
+Data Quality
+Data Validation
+Data Cleansing
+Great Expectations
+Deequ
+dbt
+dbt Core
+dbt Cloud
+SQLMesh
+Data Build Tool
+Feature Store
+Feast
+ML Feature Store
+Data Versioning
+DVC
+LakeFS
+Data Observability
+Monte Carlo
+DataDog
+OpenLineage
+Metadata Management
+Schema Evolution
+Change Data Capture
+CDC
+Debezium
+Apache Iceberg
+Apache Hudi
+Delta Tables
+Partitioning
+Bucketing
+Indexing
+Query Optimization
+Execution Plans
+Window Functions
+Common Table Expressions
+CTE
+Stored Procedures
+Materialized Views
+Views
+Triggers
+Database Migration
+Liquibase
+Flyway
+Data Replication
+Sharding
+Clustering
+High Availability
+Backup and Recovery
+OLTP
+OLAP
+Business Intelligence
+Power BI
+Tableau
+Looker
+Metabase
+Apache Superset
+Data Visualization
+Data Mesh
+Data Fabric
+Data Architecture
+Data Engineering Best Practices
+Pipeline Monitoring
+Pipeline Scheduling
+Pipeline Optimization
+Data Security
+Data Privacy
+Data Compliance
+GDPR
+HIPAA
+Role Based Access Control
+RBAC
+Column Level Security
+Row Level Security
+Encryption at Rest
+Encryption in Transit
+Cloud Data Engineering
+AWS Glue
+AWS Athena
+AWS EMR
+AWS Lake Formation
+Azure Data Factory
+Azure Databricks
+Azure Data Lake
+Google Cloud Composer
+Google Dataproc
+Google BigLake
+Google Cloud Storage
+S3
+Blob Storage
+Object Storage

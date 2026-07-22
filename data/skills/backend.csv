@@ -1,0 +1,181 @@
+skill
+FastAPI
+Flask
+Django
+Django REST Framework
+DRF
+Bottle
+CherryPy
+Falcon
+Sanic
+Tornado
+Quart
+Starlette
+aiohttp
+Pyramid
+Web2py
+Express.js
+Node.js
+NestJS
+Koa
+Hapi
+Sails.js
+LoopBack
+FeathersJS
+AdonisJS
+Meteor
+Next.js API Routes
+Spring
+Spring Boot
+Spring MVC
+Spring Security
+Spring Data
+Hibernate
+Jakarta EE
+Java EE
+Micronaut
+Quarkus
+Dropwizard
+Play Framework
+Vert.x
+JAX-RS
+Jersey
+ASP.NET
+ASP.NET Core
+Entity Framework
+Entity Framework Core
+Blazor Server
+SignalR
+NancyFX
+Laravel
+Symfony
+CodeIgniter
+CakePHP
+Yii
+Yii2
+Slim
+Lumen
+Zend Framework
+Mezzio
+Ruby on Rails
+Sinatra
+Hanami
+Grape
+Phoenix
+Plug
+Gin
+Echo
+Fiber
+Beego
+Revel
+Buffalo
+Chi
+Gorilla Mux
+Iris
+Actix Web
+Rocket
+Axum
+Warp
+Poem
+Tide
+Rocket.rs
+Hyper
+Vapor
+Kitura
+Perfect
+Ktor
+ktor-server
+Play
+Spark Java
+Dropwizard Metrics
+Apache Tomcat
+Jetty
+Undertow
+Nginx
+Apache HTTP Server
+Caddy
+Traefik
+HAProxy
+Gunicorn
+uWSGI
+WSGI
+ASGI
+PM2
+Supervisor
+Systemd
+REST API
+RESTful API
+SOAP
+GraphQL
+gRPC
+WebSockets
+Server-Sent Events
+SSE
+OpenAPI
+Swagger
+Swagger UI
+Postman
+Insomnia
+JWT
+JSON Web Token
+OAuth
+OAuth2
+OpenID Connect
+OIDC
+SAML
+Passport.js
+Auth0
+Keycloak
+Firebase Authentication
+Amazon Cognito
+Session Authentication
+Basic Authentication
+API Key Authentication
+Rate Limiting
+CORS
+CSRF
+RBAC
+ABAC
+Microservices
+Monolith
+Service Mesh
+API Gateway
+Event-Driven Architecture
+Message Queue
+RabbitMQ
+Apache Kafka
+ActiveMQ
+Amazon SQS
+Amazon SNS
+Google Pub/Sub
+Azure Service Bus
+Redis Streams
+Celery
+RQ
+BullMQ
+Hangfire
+Temporal
+Workflow Engine
+Cron Jobs
+Background Jobs
+Task Queue
+Circuit Breaker
+Load Balancing
+Reverse Proxy
+Caching
+Redis Cache
+Memcached
+Distributed Cache
+Session Management
+Dependency Injection
+ORM
+SQLAlchemy
+Alembic
+Prisma
+Sequelize
+TypeORM
+Mongoose
+Doctrine ORM
+Knex.js
+Database Migration
+Connection Pooling

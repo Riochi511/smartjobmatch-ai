@@ -1,0 +1,169 @@
+.
+├── .gitignore
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── ai
+│   │   ├── embedding_service.py
+│   │   ├── faiss_index.py
+│   │   ├── hybrid_matcher.py
+│   │   ├── job_embedding_cache.py
+│   │   ├── model_manager.py
+│   │   ├── scripts
+│   │   │   └── build_embeddings.py
+│   │   ├── semantic_matcher.py
+│   │   └── vector_search.py
+│   ├── api
+│   │   ├── __init__.py
+│   │   ├── career_coach.py
+│   │   ├── jobs.py
+│   │   ├── resumes.py
+│   │   └── routes.py
+│   ├── config.py
+│   ├── exceptions
+│   │   ├── custom_exceptions.py
+│   │   └── handlers.py
+│   ├── llm
+│   │   ├── __init__.py
+│   │   ├── career_coach.py
+│   │   ├── context_builder.py
+│   │   ├── prompts.py
+│   │   └── providers.py
+│   ├── main.py
+│   ├── schemas
+│   │   └── resume.py
+│   ├── services
+│   │   ├── analysis_repository.py
+│   │   ├── document_parser.py
+│   │   ├── docx_parser.py
+│   │   ├── embedding_service.py
+│   │   ├── job_loader.py
+│   │   ├── job_matching_service.py
+│   │   ├── job_skill_extractor.py
+│   │   ├── matcher.py
+│   │   ├── pdf_extraction_service.py
+│   │   ├── pdf_parser.py
+│   │   ├── recommendation_engine.py
+│   │   ├── result_store.py
+│   │   ├── resume_analyzer.py
+│   │   ├── resume_processing_service.py
+│   │   ├── resume_repository.py
+│   │   ├── skill_alias_loader.py
+│   │   ├── skill_extractor.py
+│   │   ├── skill_loader.py
+│   │   ├── text_cleaner.py
+│   │   └── text_cleaning_service.py
+│   └── utils
+│       └── logger.py
+├── assets
+│   └── screenshots
+│       ├── career-coach.png
+│       ├── job-matching.png
+│       ├── project-structure.png
+│       └── swagger-ui.png
+├── data
+│   ├── analyses
+│   │   ├── 1bb6326d-32f9-4951-b7b3-30532afdcb9d.json
+│   │   ├── 39cc44ae-42ab-485d-b442-24799c360dac.json
+│   │   ├── 69dd60c6-85ea-4268-9f5c-aaef8e10223f.json
+│   │   ├── 948e2fed-d2df-48d7-b6e8-1caeee373ae8.json
+│   │   └── cb224f7b-8c84-434a-8747-f4cbb130e4d0.json
+│   ├── backups
+│   │   └── jobs_demo_backup.csv
+│   ├── cache
+│   │   ├── latest_result.json
+│   │   └── resume_history.json
+│   ├── embeddings
+│   │   ├── job_embeddings.npy
+│   │   ├── jobs.index
+│   │   └── jobs_embeddings.json
+│   ├── processed
+│   ├── raw
+│   │   ├── jobs.csv
+│   │   ├── skill_aliases.csv
+│   │   └── skills.csv
+│   ├── resumes
+│   │   ├── 1bb6326d-32f9-4951-b7b3-30532afdcb9d.pdf
+│   │   ├── 1e79fe78-3dd3-45a2-b7b3-3be114418f13.pdf
+│   │   ├── 2695bd9b-070b-4937-b3d2-dea3840479e5.pdf
+│   │   ├── 39cc44ae-42ab-485d-b442-24799c360dac.docx
+│   │   ├── 4fb0db51-5910-401d-aa1e-aec790ef15a0.pdf
+│   │   ├── 69dd60c6-85ea-4268-9f5c-aaef8e10223f.pdf
+│   │   ├── 8520b58c-5c62-4f9a-9897-cb35e236cba7.pdf
+│   │   ├── 948e2fed-d2df-48d7-b6e8-1caeee373ae8.pdf
+│   │   ├── a0c69970-e643-4e45-9660-dcdcbaaae2fd.pdf
+│   │   ├── cb224f7b-8c84-434a-8747-f4cbb130e4d0.pdf
+│   │   └── ecf19c68-6700-48f9-8d5d-d155630add7d.pdf
+│   └── skills
+│       ├── analytics.csv
+│       ├── artificial_intelligence.csv
+│       ├── backend.csv
+│       ├── cloud.csv
+│       ├── cybersecurity.csv
+│       ├── data_engineering.csv
+│       ├── databases.csv
+│       ├── devops.csv
+│       ├── devops_platform.csv
+│       ├── enterprise_system.csv
+│       ├── frontend.csv
+│       ├── mobile_development.csv
+│       ├── networking.csv
+│       ├── programming.csv
+│       ├── programming_language.csv
+│       ├── software_engineering.csv
+│       └── uiux_product.csv
+├── dockerfile
+├── frontend
+│   ├── .env
+│   ├── .gitignore
+│   ├── .oxlintrc.json
+│   ├── README.md
+│   ├── components.json
+│   ├── index.html
+│   ├── jsconfig.json
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── assets
+│   │   │   ├── hero.png
+│   │   │   ├── react.svg
+│   │   │   └── vite.svg
+│   │   ├── components
+│   │   │   └── ui
+│   │   │       ├── button.jsx
+│   │   │       ├── card.jsx
+│   │   │       └── input.jsx
+│   │   ├── index.css
+│   │   ├── lib
+│   │   │   └── utils.js
+│   │   └── main.jsx
+│   └── vite.config.js
+├── logs
+│   └── smartjob.log
+├── project_inventory.txt
+├── project_tree.txt
+├── requirements.txt
+├── runtime.txt
+├── scripts
+│   ├── build_embeddings.py
+│   └── build_processed_jobs.py
+├── smartjobmatch-ai
+├── temp_Alex_Taylor_CV.pdf
+├── temp_Jordan_Michaels_PM_CV.pdf
+└── tests
+    ├── test_embedding_cache.py
+    ├── test_faiss_index.py
+    ├── test_hybrid_matcher.py
+    ├── test_loader.py
+    ├── test_matcher.py
+    ├── test_pdf_parser.py
+    ├── test_semantic_matcher.py
+    ├── test_skill_loader.py
+    └── test_vector_search.py
+
+32 directories, 135 files

@@ -1,0 +1,4 @@
+total 363M
+-rw-rw-rw- 1 codespace codespace 182M Jul 21 23:57 job_embeddings.npy
+-rw-rw-rw- 1 codespace root      182M Jul 21 23:59 jobs.index
+-rw-rw-rw- 1 codespace root       52K Jul 19 12:22 jobs_embeddings.json

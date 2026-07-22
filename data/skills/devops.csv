@@ -1,0 +1,197 @@
+skill
+DevOps
+DevSecOps
+MLOps
+AIOps
+Git
+GitHub
+GitLab
+Bitbucket
+Git Flow
+GitHub Actions
+GitLab CI
+GitLab CI/CD
+Jenkins
+CircleCI
+Travis CI
+Azure DevOps
+Azure Pipelines
+AWS CodePipeline
+AWS CodeBuild
+Argo CD
+Argo Workflows
+FluxCD
+Tekton
+Spinnaker
+TeamCity
+Bamboo
+Buildkite
+Docker
+Docker Compose
+Docker Swarm
+Podman
+Containerd
+CRI-O
+Buildah
+Kaniko
+Kubernetes
+K8s
+Helm
+Helm Charts
+Kustomize
+Kubectl
+Minikube
+Kind
+K3s
+Rancher
+OpenShift
+Istio
+Linkerd
+Consul
+Envoy
+Service Mesh
+Ingress
+NGINX Ingress
+Traefik
+HAProxy
+Prometheus
+Grafana
+Alertmanager
+Loki
+Promtail
+Tempo
+Jaeger
+Zipkin
+OpenTelemetry
+ELK Stack
+Elastic Stack
+Elasticsearch
+Logstash
+Kibana
+Fluentd
+Fluent Bit
+Graylog
+Datadog
+New Relic
+Dynatrace
+Splunk
+Nagios
+Zabbix
+PagerDuty
+Opsgenie
+Sentry
+Terraform
+OpenTofu
+Pulumi
+Ansible
+Chef
+Puppet
+SaltStack
+Vagrant
+Packer
+CloudFormation
+ARM Templates
+Bicep
+Linux
+Ubuntu
+Debian
+CentOS
+Red Hat Enterprise Linux
+RHEL
+Rocky Linux
+AlmaLinux
+Fedora
+Amazon Linux
+Shell Scripting
+Bash
+PowerShell
+Zsh
+Cron
+Systemd
+SSH
+NFS
+SMB
+DNS
+DHCP
+TCP/IP
+HTTP
+HTTPS
+TLS
+SSL
+Reverse Proxy
+Load Balancer
+High Availability
+Disaster Recovery
+Blue Green Deployment
+Canary Deployment
+Rolling Deployment
+Feature Flags
+Infrastructure as Code
+IaC
+Immutable Infrastructure
+Configuration Management
+Secrets Management
+HashiCorp Vault
+AWS Secrets Manager
+Azure Key Vault
+Google Secret Manager
+Redis
+RabbitMQ
+Apache Kafka
+Apache Airflow
+Prefect
+Dagster
+MLflow
+Kubeflow
+DVC
+Weights and Biases
+Comet ML
+ClearML
+BentoML
+KServe
+Seldon Core
+Feast
+Great Expectations
+Evidently AI
+Neptune AI
+Ray
+Ray Serve
+Celery
+Redis Queue
+RQ
+FastAPI Deployment
+Gunicorn
+uWSGI
+NGINX
+Apache HTTP Server
+Caddy
+Supervisor
+PM2
+Autoscaling
+Horizontal Pod Autoscaler
+Vertical Pod Autoscaler
+Cluster Autoscaler
+Cloud Native
+Observability
+Monitoring
+Logging
+Tracing
+Metrics
+CI/CD
+Continuous Integration
+Continuous Delivery
+Continuous Deployment
+Release Management
+Version Control
+Artifact Registry
+Nexus Repository
+JFrog Artifactory
+SonarQube
+Trivy
+Checkov
+OWASP ZAP
+Dependabot
+Renovate
+Cosign
+Sigstore
+SBOM

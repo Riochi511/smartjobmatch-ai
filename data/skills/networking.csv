@@ -1,0 +1,62 @@
+skill,category
+TCP/IP,Networking
+UDP,Networking
+HTTP,Networking
+HTTPS,Networking
+FTP,Networking
+SFTP,Networking
+SSH,Networking
+SMTP,Networking
+POP3,Networking
+IMAP,Networking
+DNS,Networking
+DHCP,Networking
+NAT,Networking
+PAT,Networking
+VPN,Networking
+IPSec,Networking
+SSL,Networking
+TLS,Networking
+Firewall,Networking
+Proxy Server,Networking
+Reverse Proxy,Networking
+Load Balancer,Networking
+CDN,Networking
+OSI Model,Networking
+TCP Handshake,Networking
+IPv4,Networking
+IPv6,Networking
+Subnetting,Networking
+CIDR,Networking
+Routing,Networking
+Static Routing,Networking
+Dynamic Routing,Networking
+BGP,Networking
+OSPF,Networking
+EIGRP,Networking
+MPLS,Networking
+QoS,Networking
+VLAN,Networking
+LAN,Networking
+WAN,Networking
+SD-WAN,Networking
+Wi-Fi,Networking
+Wireless Networking,Networking
+Cisco Networking,Networking
+Cisco IOS,Networking
+Juniper,Networking
+Fortinet,Networking
+Palo Alto Networks,Networking
+MikroTik,Networking
+Packet Tracer,Networking
+Wireshark,Networking
+Nmap,Networking
+Netcat,Networking
+SNMP,Networking
+Syslog,Networking
+Network Monitoring,Networking
+Network Automation,Networking
+Ansible Networking,Networking
+Cisco ACI,Networking
+Software Defined Networking,Networking
+OpenFlow,Networking

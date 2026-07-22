@@ -1,0 +1,61 @@
+skill,category
+Docker,DevOps & Platform Engineering
+Docker Compose,DevOps & Platform Engineering
+Podman,DevOps & Platform Engineering
+Kubernetes,DevOps & Platform Engineering
+Helm,DevOps & Platform Engineering
+Kustomize,DevOps & Platform Engineering
+OpenShift,DevOps & Platform Engineering
+Rancher,DevOps & Platform Engineering
+Istio,DevOps & Platform Engineering
+Linkerd,DevOps & Platform Engineering
+Service Mesh,DevOps & Platform Engineering
+Terraform,DevOps & Platform Engineering
+Pulumi,DevOps & Platform Engineering
+CloudFormation,DevOps & Platform Engineering
+AWS CDK,DevOps & Platform Engineering
+Infrastructure as Code,DevOps & Platform Engineering
+Ansible,DevOps & Platform Engineering
+Chef,DevOps & Platform Engineering
+Puppet,DevOps & Platform Engineering
+SaltStack,DevOps & Platform Engineering
+Jenkins,DevOps & Platform Engineering
+GitHub Actions,DevOps & Platform Engineering
+GitLab CI/CD,DevOps & Platform Engineering
+Azure DevOps,DevOps & Platform Engineering
+CircleCI,DevOps & Platform Engineering
+Travis CI,DevOps & Platform Engineering
+Bitbucket Pipelines,DevOps & Platform Engineering
+ArgoCD,DevOps & Platform Engineering
+FluxCD,DevOps & Platform Engineering
+Continuous Integration,DevOps & Platform Engineering
+Continuous Deployment,DevOps & Platform Engineering
+Continuous Delivery,DevOps & Platform Engineering
+Prometheus,DevOps & Platform Engineering
+Grafana,DevOps & Platform Engineering
+Loki,DevOps & Platform Engineering
+ELK Stack,DevOps & Platform Engineering
+Elastic Stack,DevOps & Platform Engineering
+OpenSearch,DevOps & Platform Engineering
+Kibana,DevOps & Platform Engineering
+Fluentd,DevOps & Platform Engineering
+Fluent Bit,DevOps & Platform Engineering
+Logstash,DevOps & Platform Engineering
+Datadog,DevOps & Platform Engineering
+New Relic,DevOps & Platform Engineering
+Splunk,DevOps & Platform Engineering
+Sentry,DevOps & Platform Engineering
+Jaeger,DevOps & Platform Engineering
+OpenTelemetry,DevOps & Platform Engineering
+Vault,DevOps & Platform Engineering
+Consul,DevOps & Platform Engineering
+Nomad,DevOps & Platform Engineering
+Linux Administration,DevOps & Platform Engineering
+Bash Scripting,DevOps & Platform Engineering
+Shell Scripting,DevOps & Platform Engineering
+Nginx,DevOps & Platform Engineering
+Apache HTTP Server,DevOps & Platform Engineering
+HAProxy,DevOps & Platform Engineering
+Redis,DevOps & Platform Engineering
+RabbitMQ,DevOps & Platform Engineering
+Apache Kafka,DevOps & Platform Engineering

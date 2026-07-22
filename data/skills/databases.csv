@@ -1,0 +1,148 @@
+skill
+SQL
+MySQL
+PostgreSQL
+MariaDB
+SQLite
+Oracle Database
+Oracle SQL
+Microsoft SQL Server
+SQL Server
+T-SQL
+IBM Db2
+SAP HANA
+Teradata
+Snowflake
+Amazon Redshift
+Google BigQuery
+Azure SQL Database
+Azure Synapse Analytics
+ClickHouse
+Greenplum
+CockroachDB
+TiDB
+SingleStore
+Firebird
+Informix
+Sybase
+OpenEdge
+H2 Database
+Apache Derby
+TimescaleDB
+YugabyteDB
+Amazon Aurora
+Amazon RDS
+Google Cloud SQL
+Azure Database for PostgreSQL
+Azure Database for MySQL
+MongoDB
+CouchDB
+Couchbase
+Apache Cassandra
+ScyllaDB
+HBase
+Apache Hive
+Apache Hudi
+Apache Iceberg
+Apache Kudu
+DynamoDB
+Amazon DynamoDB
+Firebase Firestore
+Cloud Firestore
+Firebase Realtime Database
+Google Datastore
+Azure Cosmos DB
+Cosmos DB
+Redis
+Redis Cache
+Redis Cluster
+Memcached
+KeyDB
+RocksDB
+LevelDB
+Berkeley DB
+Neo4j
+TigerGraph
+Amazon Neptune
+JanusGraph
+ArangoDB
+OrientDB
+Dgraph
+GraphDB
+Milvus
+Pinecone
+Weaviate
+Qdrant
+ChromaDB
+Chroma
+FAISS
+Annoy
+Vespa
+ElasticSearch
+Elasticsearch
+OpenSearch
+Apache Solr
+Meilisearch
+Typesense
+Sphinx Search
+Lucene
+Liquibase
+Flyway
+Alembic
+Database Migration
+Database Design
+Database Administration
+Database Optimization
+Database Indexing
+Query Optimization
+Stored Procedures
+Triggers
+Views
+Materialized Views
+Replication
+Sharding
+Partitioning
+Normalization
+Denormalization
+ACID
+CAP Theorem
+Transactions
+Joins
+Window Functions
+Common Table Expressions
+CTE
+Recursive CTE
+Indexes
+Composite Indexes
+Primary Keys
+Foreign Keys
+Constraints
+Schema Design
+Data Warehousing
+OLTP
+OLAP
+Star Schema
+Snowflake Schema
+Data Modeling
+ER Diagram
+Entity Relationship Modeling
+Backup and Recovery
+High Availability
+Disaster Recovery
+Database Security
+Encryption at Rest
+Encryption in Transit
+Connection Pooling
+SQLAlchemy
+Prisma
+TypeORM
+Sequelize
+Hibernate
+Entity Framework
+Doctrine ORM
+Mongoose
+Knex.js
+Dapper
+JPA
+JDBC
+ODBC

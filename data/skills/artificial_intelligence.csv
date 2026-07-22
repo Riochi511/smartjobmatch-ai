@@ -1,0 +1,313 @@
+skill
+Artificial Intelligence
+AI
+Machine Learning
+ML
+Deep Learning
+Supervised Learning
+Unsupervised Learning
+Semi-Supervised Learning
+Self-Supervised Learning
+Reinforcement Learning
+Transfer Learning
+Multi-task Learning
+Online Learning
+Active Learning
+Few-shot Learning
+Zero-shot Learning
+One-shot Learning
+Meta Learning
+Curriculum Learning
+Federated Learning
+Distributed Training
+Model Distillation
+Knowledge Distillation
+Ensemble Learning
+Bagging
+Boosting
+Stacking
+Random Forest
+Decision Tree
+Gradient Boosting
+XGBoost
+LightGBM
+CatBoost
+AdaBoost
+Extra Trees
+Linear Regression
+Logistic Regression
+Ridge Regression
+Lasso Regression
+Elastic Net
+Naive Bayes
+KNN
+K-Nearest Neighbors
+Support Vector Machine
+SVM
+Gaussian Process
+Bayesian Optimization
+Hidden Markov Model
+HMM
+Principal Component Analysis
+PCA
+t-SNE
+UMAP
+Feature Engineering
+Feature Selection
+Feature Extraction
+Dimensionality Reduction
+Hyperparameter Tuning
+Grid Search
+Random Search
+Optuna
+Hyperopt
+Cross Validation
+Model Evaluation
+Confusion Matrix
+ROC Curve
+AUC
+Precision
+Recall
+F1 Score
+Accuracy
+Regression Metrics
+Classification Metrics
+Time Series Forecasting
+ARIMA
+SARIMA
+Prophet
+LSTM
+GRU
+Transformer
+Attention Mechanism
+Self Attention
+Multi Head Attention
+Positional Encoding
+Encoder Decoder
+Seq2Seq
+BERT
+RoBERTa
+DistilBERT
+ALBERT
+DeBERTa
+ELECTRA
+GPT
+GPT-2
+GPT-3
+GPT-4
+GPT-5
+LLaMA
+Llama 2
+Llama 3
+Mistral
+Mixtral
+Gemma
+Gemini
+Claude
+DeepSeek
+Qwen
+Falcon
+Phi
+TinyLlama
+T5
+FLAN-T5
+BART
+PEGASUS
+Bloom
+OPT
+StableLM
+Vicuna
+OpenChat
+OpenHermes
+Orca
+MPT
+Longformer
+XLNet
+ERNIE
+Sentence Transformers
+SentenceTransformer
+Embeddings
+Vector Embeddings
+Semantic Search
+Dense Retrieval
+Sparse Retrieval
+Hybrid Search
+RAG
+Retrieval Augmented Generation
+Vector Search
+Similarity Search
+Cosine Similarity
+FAISS
+ChromaDB
+Pinecone
+Weaviate
+Milvus
+Qdrant
+Annoy
+LangChain
+LangGraph
+LlamaIndex
+Haystack
+DSPy
+CrewAI
+AutoGen
+Semantic Kernel
+OpenAI API
+Azure OpenAI
+Anthropic API
+Google AI Studio
+Vertex AI
+Hugging Face
+Transformers
+Datasets
+Tokenizers
+PEFT
+LoRA
+QLoRA
+BitsAndBytes
+Accelerate
+TRL
+vLLM
+Ollama
+ONNX
+TensorRT
+TorchServe
+Triton Inference Server
+Model Serving
+Prompt Engineering
+Prompt Chaining
+Chain of Thought
+Few-shot Prompting
+Zero-shot Prompting
+Function Calling
+Tool Calling
+AI Agents
+Autonomous Agents
+Agentic AI
+Multi Agent Systems
+Memory Systems
+Planning Agents
+Reasoning Models
+Structured Output
+JSON Mode
+Vision Language Models
+VLM
+Multimodal AI
+OCR
+Speech Recognition
+Speech-to-Text
+Text-to-Speech
+Automatic Speech Recognition
+ASR
+Computer Vision
+Image Classification
+Object Detection
+Image Segmentation
+Instance Segmentation
+YOLO
+YOLOv5
+YOLOv8
+Faster R-CNN
+Mask R-CNN
+SSD
+OpenCV
+MediaPipe
+Detectron2
+Image Captioning
+Diffusion Models
+Stable Diffusion
+DALL-E
+Flux
+ControlNet
+DreamBooth
+LoRA Fine-tuning
+GAN
+Variational Autoencoder
+VAE
+Autoencoder
+CNN
+Convolutional Neural Network
+ResNet
+EfficientNet
+DenseNet
+Vision Transformer
+ViT
+Swin Transformer
+CLIP
+BLIP
+Whisper
+spaCy
+NLTK
+Gensim
+TextBlob
+Named Entity Recognition
+NER
+Sentiment Analysis
+Topic Modeling
+Text Classification
+Machine Translation
+Summarization
+Question Answering
+Token Classification
+Document Classification
+Information Extraction
+Recommendation Systems
+Collaborative Filtering
+Content Based Filtering
+Ranking Models
+Learning to Rank
+Knowledge Graphs
+Graph Neural Networks
+GNN
+PyTorch
+TensorFlow
+Keras
+JAX
+Flax
+Scikit-learn
+Pandas
+NumPy
+SciPy
+Matplotlib
+Plotly
+Weights & Biases
+MLflow
+Kubeflow
+DVC
+Feast
+Evidently AI
+Great Expectations
+Ray
+Ray Tune
+Ray Serve
+Apache Spark MLlib
+PySpark ML
+Data Preprocessing
+Data Cleaning
+Data Augmentation
+Synthetic Data
+Explainable AI
+XAI
+SHAP
+LIME
+Responsible AI
+AI Ethics
+Bias Detection
+Fairness
+Model Monitoring
+Model Drift
+Data Drift
+Inference Optimization
+Quantization
+Pruning
+Fine-tuning
+Instruction Tuning
+RLHF
+DPO
+SFT
+Benchmarking
+Inference
+Training
+GPU Computing
+CUDA
+cuDNN

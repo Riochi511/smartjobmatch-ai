@@ -1,0 +1,8 @@
+504K	data/analyses
+8.0K	data/backups
+136K	data/cache
+363M	data/embeddings
+4.0K	data/processed
+234M	data/raw
+296K	data/resumes
+72K	data/skills

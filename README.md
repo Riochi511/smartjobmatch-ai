@@ -1,423 +1,198 @@
 # 🤖 SmartJob AI
 
-### AI-Powered Resume Analysis, Hybrid Job Matching & Career Coaching Platform
+**AI-Powered Resume Analysis, Hybrid Job Matching & Career Coaching Platform**
 
-> A production-ready AI application that analyzes resumes, semantically matches candidates to relevant job opportunities using Sentence Transformers and FAISS, and delivers personalized career coaching through Large Language Models (LLMs).
+A production-ready AI application that analyzes resumes, semantically matches candidates to relevant job opportunities using Sentence Transformers + FAISS, explains every match, and delivers personalized career coaching through Large Language Models.
 
-![Version](https://img.shields.io/badge/version-v1.0.0-blue)
-![Python](https://img.shields.io/badge/Python-3.11+-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.139-green)
-![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-success)
-![SentenceTransformers](https://img.shields.io/badge/SentenceTransformers-NLP-orange)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
+**Live Demo:** https://smartjob-ai-528680050748.us-central1.run.app
+**API Docs:** https://smartjob-ai-528680050748.us-central1.run.app/docs
 
----
+## 📖 Overview
 
-# 📖 Overview
+SmartJob AI is a full-stack AI product that helps job seekers understand how well their resume matches real job openings and what they should improve.
 
-SmartJob AI is a production-style AI application that analyzes resumes, extracts skills, semantically matches them against thousands of job postings, and provides personalized AI-generated career advice.
+It goes beyond simple keyword matching by combining:
+- Semantic understanding (Sentence Transformers)
+- High-speed vector search (FAISS)
+- Keyword re-ranking
+- Explainable match reasons
+- LLM-powered career coaching
 
-Unlike traditional keyword-based resume matchers, SmartJob AI combines semantic understanding, vector search, keyword matching, and LLM-powered reasoning to produce accurate, explainable, and actionable career recommendations.
+## ✨ Key Features
 
----
-
-# 🎯 Why SmartJob AI?
-
-Traditional resume screening systems rely heavily on keyword matching, often overlooking qualified candidates whose resumes use different wording.
-
-SmartJob AI addresses this limitation by combining semantic understanding with traditional keyword matching to produce more accurate, explainable, and personalized recommendations.
-
-### Key capabilities
-
-- 📄 Intelligent resume parsing (PDF & DOCX)
-- 🧠 Semantic similarity using Sentence Transformers
-- ⚡ High-speed FAISS vector search
-- 🔀 Hybrid ranking (semantic + keyword matching)
-- 💼 AI-powered career coaching using LLMs
-- 📊 Explainable job recommendations (Top 10 matches)
-
----
-
-# ⭐ Key Highlights
-
-- Production-ready FastAPI backend
-- Hybrid AI job matching engine
-- FAISS vector database integration
-- Sentence Transformer embeddings
-- OpenRouter LLM integration
-- Modular software architecture
-- Structured logging
-- Centralized exception handling
-- Docker-ready architecture
-- Clean top-10 match results
-
----
-
-# ✨ Features
-
-## Resume Processing
-
-- Upload PDF resumes
-- Upload DOCX resumes
-- Automatic text extraction
-- Resume history & analysis storage
-
----
-
-## Resume Analysis
-
+### 1. Intelligent Resume Analysis
+- PDF resume parsing
 - Skill extraction across multiple categories
-- Resume evaluation
-- Missing skill identification
-- Category breakdown
+- Resume strength & weakness detection
 
----
+### 2. Hybrid AI Job Matching
+- Semantic retrieval with Sentence Transformers
+- FAISS vector search over thousands of jobs
+- Keyword re-ranking
+- Returns the Top 10 best matches
 
-## Hybrid AI Job Matching
+### 3. Match Explainability (New)
+Every job match now includes:
+- Why this matched
+- Gap Severity (None / Low / Medium / High)
+- Actionable Suggestion
 
-SmartJob AI combines multiple matching techniques:
+### 4. AI Career Coach
+Powered by OpenRouter LLMs. Provides:
+- Resume strengths & gaps
+- Personalized learning roadmap
+- Portfolio project ideas
+- Interview preparation tips
 
-- Semantic Search
-- Sentence Transformers
-- FAISS Vector Search
-- Keyword Matching
-- Hybrid Ranking
+### 5. Production Architecture
+- FastAPI backend
+- React + Vite frontend
+- Google Cloud Storage for large embedding files
+- Deployed on Google Cloud Run
+- Dockerized & production-ready
 
-Returns the **Top 10** most relevant jobs ranked by overall match score.
+## 🏗 System Architecture
 
----
-
-## AI Career Coach
-
-Powered by OpenRouter LLM.
-
-Provides:
-
-- Resume strengths
-- Resume weaknesses
-- Missing skill analysis
-- Four-week learning roadmap
-- Portfolio project recommendations
-- Interview preparation
-- Hiring readiness evaluation
-
----
-
-## Performance Optimizations
-
-- Pre-computed embeddings
-- Cached FAISS index
-- Fast semantic search
-- Efficient top-k retrieval
-- Modular architecture
-
----
-
-# 🏗 System Architecture
-
-```text
-                     Resume Upload
-                           │
-                           ▼
-                  Document Parser
-                           │
-                           ▼
-                    Text Cleaning
-                           │
-                           ▼
-                   Skill Extraction
-                           │
-                           ▼
-                   Resume Analysis
-                           │
-                           ▼
-              Sentence Transformer
-                           │
-                           ▼
-                Embedding Generation
-                           │
-                           ▼
-                  FAISS Vector Search
-                           │
-                           ▼
-                  Keyword Matching
-                           │
-                           ▼
-                   Hybrid Matcher
-                           │
-                           ▼
-              Recommendation Engine
-                           │
-                           ▼
-                  AI Career Coach
+```
+Resume Upload
+     │
+     ▼
+Document Parser + Text Cleaning
+     │
+     ▼
+Skill Extraction + Resume Analysis
+     │
+     ▼
+Sentence Transformer Embeddings
+     │
+     ▼
+FAISS Semantic Retrieval (Top 200)
+     │
+     ▼
+Keyword Re-ranking + Hybrid Scoring
+     │
+     ▼
+Match Explainer (Why matched + Gap + Suggestion)
+     │
+     ▼
+Top 10 Jobs + AI Career Coach
 ```
 
----
+## 🛠 Tech Stack
 
-# 🛠 Tech Stack
+| Layer | Technology |
+|---|---|
+| Backend | FastAPI, Python 3.12 |
+| AI / NLP | Sentence Transformers, FAISS, PyTorch |
+| LLM | OpenRouter (DeepSeek) |
+| Frontend | React + Vite + Tailwind |
+| Storage | Google Cloud Storage |
+| Deployment | Google Cloud Run + Docker |
+| Document Parsing | PyMuPDF, python-docx |
 
-## Backend
-- FastAPI
-- Python
+## 📂 Project Structure
 
-## Artificial Intelligence
-- Sentence Transformers
-- FAISS
-- PyTorch
-
-## Data Processing
-- Pandas
-- NumPy
-
-## Large Language Model
-- OpenRouter API
-
-## Document Processing
-- PyMuPDF
-- python-docx
-
-## Development Tools
-- Git
-- GitHub
-- VS Code
-
----
-
-# 📂 Project Structure
-
-```text
+```
 app/
-├── ai/                 # Hybrid matching, FAISS, embeddings
-├── api/                # FastAPI routers
-├── exceptions/         # Custom exceptions & handlers
-├── llm/                # Career Coach + prompts
-├── services/           # Business logic & repositories
-├── utils/              # Logger
-├── config.py
+├── ai/                  # HybridMatcher, SemanticMatcher, FAISS
+├── api/                 # FastAPI routers
+├── llm/                 # Career Coach + prompts
+├── services/            # Business logic, MatchExplainer, DataDownloader
+├── exceptions/
+├── utils/
 └── main.py
 
+frontend/                # React + Vite application
 data/
-├── raw/                # Original jobs.csv
-├── embeddings/         # FAISS index + embeddings
-├── skills/             # Skill category CSVs
-├── cache/              # Latest results & history
-├── resumes/            # Uploaded resumes
-└── analyses/           # Saved analyses
+├── raw/                 # jobs.csv (loaded from GCS in production)
+├── embeddings/          # FAISS index + embeddings (loaded from GCS)
+└── skills/
 
-scripts/
-tests/
-frontend/               # React + Vite frontend
+Dockerfile
+Procfile
 ```
 
----
+## 🚀 Live Deployment
 
-# 🚀 Installation
+The backend is live on Google Cloud Run:
+- **Service URL:** https://smartjob-ai-528680050748.us-central1.run.app
+- **Swagger UI:** https://smartjob-ai-528680050748.us-central1.run.app/docs
 
-Clone the repository
+Large embedding files are stored in Google Cloud Storage and downloaded on first request (lazy loading).
+
+## 📡 API Endpoints
+
+**Match Resume**
+`POST /jobs/match`
+Upload a PDF resume → returns analysis + top 10 jobs with explanations.
+
+**Career Coach**
+`POST /career-coach/?job_index=0`
+Generate personalized career advice for a specific matched job.
+
+## 🖥 Local Development
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smartjob-ai.git
-cd smartjob-ai
-```
+# Clone
+git clone https://github.com/Riochi511/smartjobmatch-ai.git
+cd smartjobmatch-ai
 
-Create a virtual environment
-
-```bash
+# Backend
 python -m venv .venv
-```
-
-Activate the virtual environment
-
-**Windows**
-```bash
-.venv\Scripts\activate
-```
-
-**macOS / Linux**
-```bash
-source .venv/bin/activate
-```
-
-Install dependencies
-
-```bash
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
 
-Create environment file
-
-```bash
+# Environment
 cp .env.example .env
+# Add your OPENROUTER_API_KEY and GCS_BUCKET
+
+# Run backend
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+# Frontend
+cd frontend
+npm install
+echo "VITE_API_URL=http://127.0.0.1:8000" > .env
+npm run dev
 ```
 
-Add your OpenRouter API key inside `.env`:
+## 🧠 How Matching Works
 
-```env
-OPENROUTER_API_KEY=your_key_here
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-OPENROUTER_MODEL=deepseek/deepseek-chat-v3-0324
-```
+1. Resume is parsed and cleaned
+2. Skills are extracted
+3. Resume is embedded with `all-MiniLM-L6-v2`
+4. FAISS retrieves the top 200 semantically similar jobs
+5. Keyword matching re-ranks the candidates
+6. Hybrid score is calculated
+7. MatchExplainer generates human-readable reasons + gap analysis
+8. Top 10 results are returned
 
-Run the application
+## 🗺 Roadmap
 
-```bash
-uvicorn app.main:app --reload
-```
+**Completed (v1.1)**
+- [x] Resume parsing (PDF)
+- [x] Hybrid semantic + keyword matching
+- [x] Top-10 ranked results
+- [x] Match explainability
+- [x] AI Career Coach
+- [x] Google Cloud Run deployment
+- [x] GCS integration for large files
+- [x] Full frontend integration
 
-Open Swagger UI
+**Future**
+- [ ] User accounts & history
+- [ ] Live job board APIs
+- [ ] Resume improvement suggestions with rewrite
+- [ ] Employer-facing dashboard
 
-```
-http://127.0.0.1:8000/docs
-```
+## 👨‍💻 Author
 
----
+**Alfred Bright Riochi**
+AI/ML Engineer focused on building practical, production-ready intelligent systems.
 
-# 📡 API Endpoints
+- GitHub: https://github.com/Riochi511
+- LinkedIn: https://www.linkedin.com/in/riochi-ai453b9
 
-## Upload & Match Resume
-
-```http
-POST /jobs/match
-```
-
-Returns:
-- Resume analysis
-- Extracted skills
-- **Top 10** hybrid job matches
-- Recommendations
-
----
-
-## AI Career Coach
-
-```http
-POST /career-coach/
-```
-
-Generate career advice for the best-matched job.
-
-Or choose a specific job:
-
-```http
-POST /career-coach/?job_index=2
-```
-
-Returns:
-- Resume evaluation
-- Learning roadmap
-- Portfolio recommendations
-- Interview preparation
-- Hiring readiness score
-
----
-
-# 📊 Dataset
-
-The project uses a curated dataset of job postings stored in:
-
-```text
-data/raw/jobs.csv
-```
-
-Semantic search is accelerated using pre-generated embeddings and a FAISS index:
-
-```text
-data/embeddings/
-├── jobs.index
-└── job_embeddings.npy
-```
-
-Skill definitions are organized by category in:
-
-```text
-data/skills/
-```
-
----
-
-# 🧪 Testing
-
-The project includes automated tests for core components.
-
-Run all tests with:
-
-```bash
-pytest
-```
-
----
-
-## 📸 Screenshots
-
-### Swagger API
-![Swagger UI](assets/screenshots/swagger-ui.png)
-
-### Resume Matching
-![Job Matching](assets/screenshots/job-matching.png)
-
-### AI Career Coach
-![Career Coach](assets/screenshots/career-coach.png)
-
-### Project Structure
-![Project Structure](assets/screenshots/project-structure.png)
-
----
-
-# 🗺 Roadmap
-
-## Version 1.0 ✅
-
-- Resume parsing (PDF & DOCX)
-- Skill extraction
-- Hybrid matching (Semantic + Keyword)
-- FAISS integration
-- Top-10 ranked results
-- AI Career Coach
-- Structured logging
-- Exception handling
-- File validation & cleanup
-
----
-
-## Future Versions
-
-- Live job APIs
-- User authentication
-- Cloud deployment
-- CI/CD pipeline
-- Resume version comparison
-- Employer dashboard
-- Frontend full integration
-
----
-
-# 👨‍💻 Author
-
-## Alfred Bright Riochi
-
-AI/ML Engineer passionate about building intelligent systems that solve real-world problems using Machine Learning, NLP, Vector Search, and Large Language Models.
-
-**GitHub:** https://github.com/Riochi511  
-**LinkedIn:** https://www.linkedin.com/in/riochi-ai453b9
-
----
-
-# 🤝 Contributing
-
-Contributions, ideas, and suggestions are welcome.
-
-1. Fork the repository  
-2. Create a feature branch  
-3. Commit your changes  
-4. Submit a Pull Request  
-
----
-
-# 📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
-
----
-
-⭐ If you find this project useful, consider giving it a star on GitHub!
-```

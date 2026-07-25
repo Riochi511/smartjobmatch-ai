@@ -1,20 +1,29 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.jobs import router as jobs_router
-from app.api.resumes import router as resume_router
-from app.api.career_coach import router as career_router
-from app.exceptions.custom_exceptions import SmartJobException
-from app.exceptions.handlers import (
-    smartjob_exception_handler,
-    generic_exception_handler,
-)
+from app.api.career_coach import router as career_coach_router
+from app.utils.logger import logger
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logger.info("Application starting up...")
+    # Data download is now lazy (happens on first request)
+    yield
+    logger.info("Application shutting down...")
+
 
 app = FastAPI(
     title="SmartJob AI",
-    version="1.0.0"
+    description="AI-Powered Resume Analysis, Hybrid Job Matching & Career Coaching",
+    version="1.0.0",
+    lifespan=lifespan,
 )
 
+# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -23,18 +32,18 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Register exception handlers
-app.add_exception_handler(SmartJobException, smartjob_exception_handler)
-app.add_exception_handler(Exception, generic_exception_handler)
-
+# Routers
 app.include_router(jobs_router)
-app.include_router(resume_router)
-app.include_router(career_router)
+app.include_router(career_coach_router)
 
 
 @app.get("/")
 def root():
-    return {"status": "running"}
+    return {
+        "message": "SmartJob AI is running",
+        "version": "1.0.0",
+        "status": "ok"
+    }
 
 
 @app.get("/health")

@@ -5,6 +5,7 @@ from app.config import (
 
 from app.services.matcher import Matcher
 from app.ai.semantic_matcher import SemanticMatcher
+from app.services.match_explainer import MatchExplainer
 
 
 class HybridMatcher:
@@ -28,23 +29,12 @@ class HybridMatcher:
 
         for job in keyword_results:
 
-            keyword_score = job.get(
-                "keyword_score",
-                0.0
-            )
-
-            semantic_score = job.get(
-                "semantic_score",
-                0.0
-            )
+            keyword_score = job.get("keyword_score", 0.0)
+            semantic_score = job.get("semantic_score", 0.0)
 
             overall_score = round(
-                (
-                    keyword_score * KEYWORD_WEIGHT
-                ) +
-                (
-                    semantic_score * SEMANTIC_WEIGHT
-                ),
+                (keyword_score * KEYWORD_WEIGHT) +
+                (semantic_score * SEMANTIC_WEIGHT),
                 2
             )
 
@@ -62,6 +52,15 @@ class HybridMatcher:
 
             job["confidence"] = confidence
 
+            # NEW: Match Explanation
+            job["explanation"] = MatchExplainer.explain(
+                matched_skills=job.get("matched_skills", []),
+                missing_skills=job.get("missing_skills", []),
+                overall_score=overall_score,
+                semantic_score=semantic_score,
+                keyword_score=keyword_score
+            )
+
             results.append(job)
 
         results.sort(
@@ -69,5 +68,5 @@ class HybridMatcher:
             reverse=True
         )
 
-        #Return only the top 10 matches
+        # Return only the top 10 matches
         return results[:10]

@@ -2,7 +2,6 @@ from fastapi import APIRouter, Query
 
 from app.llm.career_coach import CareerCoach
 from app.llm.context_builder import ContextBuilder
-
 from app.services.result_store import ResultStore
 
 
@@ -20,22 +19,18 @@ async def career_coach(
         description="Index of the matched job."
     )
 ):
+    result = ResultStore.load()
 
-    latest = ResultStore.load()
-
-    if not latest:
+    if not result:
         return {
             "success": False,
             "message": (
                 "No resume analysis found. "
-                "Please upload and match a resume first."
+                "Please upload and match a resume first using /jobs/match."
             )
         }
 
-    matches = latest.get(
-        "matches",
-        []
-    )
+    matches = result.get("matches", [])
 
     if job_index >= len(matches):
         return {
@@ -46,21 +41,19 @@ async def career_coach(
     selected_match = matches[job_index]
 
     context = ContextBuilder.build(
-        latest["analysis"],
-        latest["skills"],
+        result.get("analysis", ""),
+        result.get("skills", []),
         selected_match,
-        latest["recommendations"]
+        result.get("recommendations", [])
     )
 
-    advice = CareerCoach.generate(
-        context
-    )
+    advice = CareerCoach.generate(context)
 
     return {
         "success": True,
-        "resume_id": latest["resume_id"],
-        "filename": latest["filename"],
-        "selected_job": selected_match["title"],
-        "company": selected_match["company"],
+        "resume_id": result.get("resume_id"),
+        "filename": result.get("filename"),
+        "selected_job": selected_match.get("title"),
+        "company": selected_match.get("company"),
         "career_advice": advice
     }

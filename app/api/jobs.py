@@ -16,6 +16,8 @@ from app.services.resume_repository import ResumeRepository
 from app.services.analysis_repository import AnalysisRepository
 from app.services.result_store import ResultStore
 
+from app.services.data_downloader import ensure_data_ready
+
 from app.utils.logger import logger
 
 
@@ -51,6 +53,9 @@ async def match_jobs(file: UploadFile = File(...)):
             status_code=400,
             detail="File is too large. Maximum allowed size is 5 MB."
         )
+
+    # Download data from GCS if needed (lazy loading)
+    ensure_data_ready()
 
     temp_file = f"temp_{filename}"
 

@@ -155,17 +155,24 @@ export default function App() {
     try {
       const response = await fetch(
         `${API_URL}/career-coach/?job_index=${jobIndex}`,
-        { method: "POST" }
+        {
+          method: "POST",
+        }
       );
 
       if (!response.ok) {
-        throw new Error(`Career coach request failed with status ${response.status}`);
+        throw new Error(
+          `Career coach request failed with status ${response.status}`
+        );
       }
 
       const data = await response.json();
       setAdvice(data.career_advice || "");
       setTimeout(() => {
-        careerCoachRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        careerCoachRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }, 100);
     } catch (err) {
       setAdviceError(
@@ -187,7 +194,9 @@ export default function App() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
               <Sparkles className="h-4 w-4 text-white" />
             </div>
-            <span className="text-base font-semibold tracking-tight">SmartJob AI</span>
+            <span className="text-base font-semibold tracking-tight">
+              SmartJob AI
+            </span>
           </div>
           <button
             onClick={scrollToUpload}
@@ -217,8 +226,8 @@ export default function App() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-500">
-              AI-powered resume analysis, semantic job matching, and personalized
-              career coaching.
+              AI-powered resume analysis, semantic job matching, and
+              personalized career coaching.
             </p>
 
             <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -244,7 +253,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Decorative illustration */}
           <div className="relative mx-auto mt-16 hidden max-w-2xl sm:block">
             <div className="rounded-3xl border border-slate-100 bg-white p-6 shadow-2xl shadow-blue-100">
               <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
@@ -272,7 +280,10 @@ export default function App() {
       </section>
 
       {/* UPLOAD SECTION */}
-      <section ref={uploadSectionRef} className="mx-auto max-w-3xl px-6 py-16 scroll-mt-20">
+      <section
+        ref={uploadSectionRef}
+        className="mx-auto max-w-3xl px-6 py-16 scroll-mt-20"
+      >
         <div
           onDragOver={(e) => {
             e.preventDefault();
@@ -455,6 +466,39 @@ export default function App() {
                   </div>
                 )}
 
+                {job.explanation && (
+                  <div className="mt-5 rounded-2xl bg-slate-50 p-4 text-sm">
+                    <p className="mb-2 font-semibold text-slate-800">
+                      Why this matched
+                    </p>
+                    <ul className="mb-3 list-inside list-disc space-y-1 text-slate-600">
+                      {job.explanation.why_matched?.map((reason, i) => (
+                        <li key={i}>{reason}</li>
+                      ))}
+                    </ul>
+
+                    <p className="text-slate-700">
+                      <span className="font-medium">Gap Severity:</span>{" "}
+                      <span
+                        className={
+                          job.explanation.gap_severity === "High"
+                            ? "text-red-600"
+                            : job.explanation.gap_severity === "Medium"
+                            ? "text-amber-600"
+                            : "text-emerald-600"
+                        }
+                      >
+                        {job.explanation.gap_severity}
+                      </span>
+                    </p>
+
+                    <p className="mt-2 text-slate-700">
+                      <span className="font-medium">Suggestion:</span>{" "}
+                      {job.explanation.suggestion}
+                    </p>
+                  </div>
+                )}
+
                 <button
                   onClick={() => handleGetAdvice(index)}
                   disabled={adviceLoading && activeJobIndex === index}
@@ -473,9 +517,12 @@ export default function App() {
         </section>
       )}
 
-{/* CAREER COACH */}
+      {/* CAREER COACH */}
       {(advice || adviceError) && (
-        <section ref={careerCoachRef} className="mx-auto max-w-4xl px-6 pb-24 scroll-mt-20">
+        <section
+          ref={careerCoachRef}
+          className="mx-auto max-w-4xl px-6 pb-24 scroll-mt-20"
+        >
           <div className="rounded-3xl border border-blue-100 bg-blue-50/50 p-8 sm:p-10">
             <div className="flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-600 shadow-lg shadow-blue-200">
@@ -502,7 +549,7 @@ export default function App() {
                 </div>
               </div>
             ) : (
-              <div className="mt-6 max-w-none rounded-2xl bg-white p-6 text-slate-700 leading-relaxed [&_h1]:text-2xl [&_h1]:font-bold [&_h1]:mt-6 [&_h1]:mb-3 [&_h1]:text-slate-900 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-slate-900 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:mt-4 [&_h3]:mb-2 [&_h3]:text-slate-900 [&_p]:mb-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:mb-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:mb-3 [&_li]:mb-1 [&_strong]:font-semibold [&_strong]:text-slate-900 [&_code]:rounded [&_code]:bg-slate-100 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:text-sm [&_hr]:my-6 [&_hr]:border-slate-200">
+              <div className="mt-6 max-w-none rounded-2xl bg-white p-6 leading-relaxed text-slate-700 [&_code]:rounded [&_code]:bg-slate-100 [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:text-sm [&_h1]:mb-3 [&_h1]:mt-6 [&_h1]:text-2xl [&_h1]:font-bold [&_h1]:text-slate-900 [&_h2]:mb-3 [&_h2]:mt-6 [&_h2]:text-xl [&_h2]:font-bold [&_h2]:text-slate-900 [&_h3]:mb-2 [&_h3]:mt-4 [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-slate-900 [&_hr]:my-6 [&_hr]:border-slate-200 [&_li]:mb-1 [&_ol]:mb-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_p]:mb-3 [&_strong]:font-semibold [&_strong]:text-slate-900 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-5">
                 <ReactMarkdown>{advice}</ReactMarkdown>
               </div>
             )}
@@ -524,8 +571,8 @@ export default function App() {
                 </span>
               </div>
               <p className="mt-2 max-w-xs text-xs text-slate-400">
-                AI-powered resume analysis and semantic job matching for
-                modern job seekers.
+                AI-powered resume analysis and semantic job matching for modern
+                job seekers.
               </p>
             </div>
 
@@ -547,7 +594,10 @@ export default function App() {
 
           <div className="mt-8 flex items-center justify-center gap-1.5 border-t border-slate-100 pt-6 text-xs text-slate-400 sm:justify-start">
             <BadgeCheck className="h-3.5 w-3.5" />
-            <span>&copy; {new Date().getFullYear()} SmartJob AI. All rights reserved.</span>
+            <span>
+              &copy; {new Date().getFullYear()} SmartJob AI. All rights
+              reserved.
+            </span>
           </div>
         </div>
       </footer>

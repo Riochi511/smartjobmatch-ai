@@ -8,109 +8,60 @@ class Matcher:
 
         results = []
 
-        # Support both old and new skill formats
+        # Normalize resume skills to lowercase set
         if resume_skills and isinstance(resume_skills[0], dict):
-
-            resume_skill_map = {
-                item["skill"].lower(): item["category"]
+            resume_set = {
+                item["skill"].lower()
                 for item in resume_skills
             }
-
         else:
-
-            resume_skill_map = {
-                skill.strip().lower(): "General"
+            resume_set = {
+                skill.strip().lower()
                 for skill in resume_skills
             }
 
-        resume_set = set(resume_skill_map.keys())
-
         for job in candidate_jobs:
 
-            description = str(
-                job.get("description", "")
-            ).lower()
+            # Prefer pre-extracted job skills if available
+            job_skills = job.get("required_skills") or []
 
-            matched_set = set()
+            if not job_skills:
+                # Fallback: extract from description
+                description = str(job.get("description", "")).lower()
+                job_skills = []
+                for skill in resume_set:
+                    pattern = r"\b" + re.escape(skill) + r"\b"
+                    if re.search(pattern, description):
+                        job_skills.append(skill)
 
-            matched_categories = {}
+            job_set = {s.lower() for s in job_skills}
 
-            for skill in resume_set:
+            # Correct comparison
+            matched_set = resume_set & job_set
+            missing_set = job_set - resume_set
 
-                pattern = (
-                    r"\b"
-                    + re.escape(skill)
-                    + r"\b"
-                )
-
-                if re.search(pattern, description):
-
-                    matched_set.add(skill)
-
-                    matched_categories[skill] = (
-                        resume_skill_map[skill]
-                    )
-
-            missing = sorted(
-                list(
-                    resume_set - matched_set
-                )
-            )
-
-            if resume_set:
-
+            if job_set:
                 keyword_score = round(
-                    (
-                        len(matched_set)
-                        / len(resume_set)
-                    ) * 100,
-                    2
+                    (len(matched_set) / len(job_set)) * 100, 2
                 )
-
             else:
-
                 keyword_score = 0.0
 
             results.append({
-
                 "job_id": job.get("job_id"),
-
                 "title": job.get("title"),
-
-                "company": job.get("company_name"),
-
+                "company": job.get("company_name") or job.get("company"),
                 "location": job.get("location"),
+                "industry": job.get("industry_name") or job.get("industry"),
+                "employment_type": job.get("formatted_work_type") or job.get("employment_type"),
+                "experience_level": job.get("formatted_experience_level") or job.get("experience_level"),
 
-                "industry": job.get("industry_name"),
-
-                "employment_type": job.get(
-                    "formatted_work_type"
-                ),
-
-                "experience_level": job.get(
-                    "formatted_experience_level"
-                ),
-
-                # These will be improved in Phase 3
-                "required_skills": sorted(
-                    list(matched_set)
-                ),
-
-                "matched_skills": sorted(
-                    list(matched_set)
-                ),
-
-                "matched_skill_categories": matched_categories,
-
-                "missing_skills": missing,
+                "required_skills": sorted(list(job_set)),
+                "matched_skills": sorted(list(matched_set)),
+                "missing_skills": sorted(list(missing_set)),
 
                 "keyword_score": keyword_score,
-
-                "semantic_score": job.get(
-                    "semantic_score",
-                    0.0
-                )
-
+                "semantic_score": job.get("semantic_score", 0.0)
             })
 
         return results
